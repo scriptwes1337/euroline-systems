@@ -11,7 +11,7 @@ const About = () => {
         <section>
           <h2>Company Overview</h2>
           <p>
-            <strong>Euroline Systems Pte Ltd</strong> was founded in January 2018 by the former team of K&H Facade Pte Ltd, under the leadership of Mr. Tan Bak Khoon. We specialize in the design, fabrication, and installation of aluminum profiles for commercial buildings, hotels, and residential properties.
+            <strong>Euroline Systems Pte Ltd</strong> was founded in January 2018 by a team of experienced specialists with over 30+ years of experience in the industry. We specialize in the design, fabrication, and installation of aluminum profiles for commercial buildings, hotels, and residential properties.
           </p>
         </section>
 
@@ -78,7 +78,7 @@ const About = () => {
         <section>
           <h2>Client Testimonial</h2>
           <blockquote>
-            Mandarin Oriental's Director of Engineering praised Euroline Systems for their professionalism and outstanding service, ability to handle demanding projects, consistent quality across complex projects, honesty, and helpfulness.
+            Mandarin Oriental's Director of Engineering praised our team for their professionalism and outstanding service, ability to handle demanding projects, consistent quality across complex projects, honesty, and helpfulness.
           </blockquote>
         </section>
       </main>
