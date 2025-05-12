@@ -92,13 +92,13 @@ const ProjectDetail = () => {
               <h2>Scope Of Work</h2>
               <p style={{ lineHeight: "1.6" }}>{project.description}</p>
             </div>
-            <div className="project-meta">
-              <div className="meta-box">
-                <h3 style={{ marginTop: 0 }}>Time To Complete</h3>
-                <p>
-                  <strong>Scope:</strong> {project.timeToComplete}
-                </p>
-              </div>
+            <div className="project-description">
+              <h2>Architect</h2>
+              <p style={{ lineHeight: "1.6" }}>{project.architect}</p>
+            </div>
+            <div className="project-description">
+              <h2>Completion Time</h2>
+              <p style={{ lineHeight: "1.6" }}>{project.timeToComplete}</p>
             </div>
           </div>
         </div>

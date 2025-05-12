@@ -63,10 +63,10 @@ export const Statistics = () => {
            </Flex>
            <Flex direction={"column"}>
              <Text h2 css={{ color: "#FFC107" }}>
-               30+ Years
+               1998
              </Text>
              <Text span css={{ textAlign: "center" }} weight={"medium"}>
-               Experience
+               Established
              </Text>
            </Flex>
          </Flex>
