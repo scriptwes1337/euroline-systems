@@ -14,7 +14,6 @@ export const Nav = () => {
       'Products',
       'Projects',
       'About',
-      'Contact',
       'Careers',
    ];
    return (
@@ -70,9 +69,9 @@ export const Nav = () => {
              <Link
                color="inherit"
                css={{
-                 minWidth: "100%",
+                minWidth: "100%",
                }}
-               href="#"
+               href={`/${item.toLowerCase()}`}
              >
                {item}
              </Link>

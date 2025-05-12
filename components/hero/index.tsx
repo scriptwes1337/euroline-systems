@@ -52,7 +52,7 @@ export const Hero = () => {
                color: "#FFC107", // a darker yellow
                }}
              >
-               your glass and aluminium projects
+               all your project requirements
              </Text>
            </Box>
 
