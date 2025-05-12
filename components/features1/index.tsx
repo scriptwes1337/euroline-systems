@@ -27,7 +27,7 @@ export const Features1 = () => {
         }}
       >
         <Flex direction="column">
-          <Text span css={{ color: "$blue600" }}>
+          <Text span css={{ color: "#FFC107" }}>
             Premium Aluminum Solutions
           </Text>
           <Text h3>Italian-Engineered Precision</Text>
@@ -93,7 +93,7 @@ export const Features1 = () => {
               },
             }}
           >
-            <img src="sliding-door.jpg" alt="sliding door" />
+            <img src="/sliding-door.jpg" alt="sliding door" />
           </Box>
         </Flex>
       </Flex>

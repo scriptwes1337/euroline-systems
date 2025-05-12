@@ -48,9 +48,9 @@ export const Hero = () => {
              <Text
                h1
                css={{
-                 display: "inline",
+               display: "inline",
+               color: "#FFC107", // a darker yellow
                }}
-               color="primary"
              >
                your glass and aluminium projects
              </Text>

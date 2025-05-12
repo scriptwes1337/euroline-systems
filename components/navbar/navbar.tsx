@@ -30,18 +30,27 @@ export const Nav = () => {
      >
        <Navbar.Brand>
          <Navbar.Toggle aria-label="toggle navigation" showIn="xs" />
-           <a href="/" style={{ all: 'unset', display: 'flex', alignItems: 'center', gap: 8, cursor: "pointer"}}>
-            <Image
-              src={"/euroline-systems-logo.png"}
-              alt="Euroline Systems Logo"
-              style={{ height: 40, width: 50 }}
-              width={50}
-              height={50}
-            />
-            <Text b color="inherit" hideIn="xs" css={{ lineHeight: 1 }}>
-              Euroline Systems
-            </Text>
-           </a>
+         <a
+           href="/"
+           style={{
+             all: "unset",
+             display: "flex",
+             alignItems: "center",
+             gap: 8,
+             cursor: "pointer",
+           }}
+         >
+           <Image
+             src={"/euroline-systems-logo.png"}
+             alt="Euroline Systems Logo"
+             style={{ height: 40, width: 50 }}
+             width={50}
+             height={50}
+           />
+           <Text b color="inherit" hideIn="xs" css={{ lineHeight: 1 }}>
+             Euroline Systems
+           </Text>
+         </a>
          <Navbar.Content
            hideIn="sm"
            css={{
@@ -94,9 +103,17 @@ export const Nav = () => {
          {/* <ModalLogin /> */}
 
          <Navbar.Item>
-           <Button auto flat href="#">
-             Conctact Us Now
-           </Button>
+            <Button
+             as={Link}
+             href="https://wa.me/+6598908811"
+             auto
+             flat
+             color="warning"
+             target="_blank"
+             rel="noopener noreferrer"
+            >
+             Contact Us Now
+            </Button>
          </Navbar.Item>
          {/* <Navbar.Item hideIn={'xs'}>
                <Link

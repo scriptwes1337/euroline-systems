@@ -27,7 +27,7 @@ export const Features3 = () => {
         }}
       >
         <Flex direction="column">
-          <Text span css={{ color: "$blue600" }}>
+          <Text span css={{ color: "#FFC107" }}>
             Trusted Partner
           </Text>
           <Text h3>Proven Luxury Collaborations</Text>

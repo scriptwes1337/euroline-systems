@@ -1,4 +1,3 @@
-import React from 'react';
 import { Footer } from '../../components/footer';
 import { Nav } from '../../components/navbar/navbar';
 
@@ -35,10 +34,29 @@ const products = [
   },
 ];
 
+const cardStyle: React.CSSProperties = {
+  border: "1px solid #eee",
+  borderRadius: "8px",
+  padding: "1rem",
+  textAlign: "center",
+  background: "#fafafa",
+  transition: "box-shadow 0.2s, transform 0.2s",
+  cursor: "pointer",
+};
+
 const ProductsPage = () => {
   return (
     <>
-      <Nav />{" "}
+      <style>{`
+        .product-card:hover {
+          box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+          transform: translateY(-4px) scale(1.03);
+        }
+        .product-title {
+          color: #000;
+        }
+      `}</style>
+      <Nav />
       <div style={{ padding: "2rem" }}>
         <h1>Products</h1>
         <div
@@ -50,21 +68,13 @@ const ProductsPage = () => {
         >
           {products.map((product) => (
             <a href={product.link} key={product.id} target="_blank" rel='noreferrer'>
-              <div
-                style={{
-                  border: "1px solid #eee",
-                  borderRadius: "8px",
-                  padding: "1rem",
-                  textAlign: "center",
-                  background: "#fafafa",
-                }}
-              >
+              <div className="product-card" style={cardStyle}>
                 <img
                   src={product.image}
                   alt={product.title}
                   style={{ width: "100%", height: "auto", borderRadius: "4px" }}
                 />
-                <h2 style={{ fontSize: "1.2rem", marginTop: "1rem" }}>
+                <h2 className="product-title" style={{ fontSize: "1.2rem", marginTop: "1rem" }}>
                   {product.title}
                 </h2>
               </div>

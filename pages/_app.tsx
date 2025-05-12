@@ -4,17 +4,25 @@ import {createTheme, NextUIProvider} from '@nextui-org/react';
 import {ThemeProvider as NextThemesProvider} from 'next-themes';
 
 const lightTheme = createTheme({
-   type: 'light',
-   theme: {
-      colors: {},
-   },
+  type: "light",
+  theme: {
+    colors: {
+      // Your light theme colors
+      primary: "#FFC107", // Set primary to your yellow
+      focus: "#FFC107", // This controls focus ring color
+    },
+  },
 });
 
 const darkTheme = createTheme({
-   type: 'dark',
-   theme: {
-      colors: {},
-   },
+  type: "dark",
+  theme: {
+    colors: {
+      // Your dark theme colors
+      primary: "#FFC107", // Set primary to your yellow
+      focus: "#FFC107", // This controls focus ring color
+    },
+  },
 });
 
 function MyApp({Component, pageProps}: AppProps) {

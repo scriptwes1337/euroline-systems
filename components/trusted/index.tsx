@@ -1,7 +1,13 @@
-import { Button, Divider, Grid, Text } from "@nextui-org/react";
+import { Divider, Grid, Text } from "@nextui-org/react";
 import React from "react";
-import { AcmeLogo } from "../navbar/logo";
 import { Flex } from "../styles/flex";
+
+const partners = [
+  "AC Consortium Architects",
+  "K2LD Architects",
+  "ar + d Architects",
+  "Mandarin Oriental Hotel",
+];
 
 export const Trusted = () => {
   return (
@@ -32,52 +38,38 @@ export const Trusted = () => {
           Over 100+ partners have seeked our help for their glass and aluminium needs
         </Text>
         <Grid.Container
-          gap={6}
+          gap={2}
           alignItems="center"
           justify="center"
           css={{
             width: "100%",
-            "@sm": {
-              width: "100%",
-            },
-            "&  span": {
-              whiteSpace: "pre",
-            },
+            mt: "$10",
+            mb: "$10",
           }}
         >
-          <Grid sm={3} justify="center">
-            <Flex align={"center"} justify={"center"}>
-              <Text weight={"semibold"} span size={"$lg"}>
-                AC Consortium Architects
-              </Text>
-            </Flex>
-          </Grid>
-          <Grid sm={3} justify="center">
-            <Flex align={"center"} justify={"center"}>
-              <Text weight={"semibold"} span size={"$lg"}>
-                K2LD Architects
-              </Text>
-            </Flex>
-          </Grid>
-          <Grid sm={3} justify="center">
-            <Flex align={"center"} justify={"center"}>
-              <Text weight={"semibold"} span size={"$lg"}>
-                ar + d Architects
-              </Text>
-            </Flex>
-          </Grid>{" "}
-          <Grid sm={3} justify="center">
-            <Flex align={"center"} justify={"center"}>
-              <Text weight={"semibold"} span size={"$lg"}>
-                Mandarin Oriental Hotel
-              </Text>
-            </Flex>
-          </Grid>
+          {partners.map((name) => (
+            <Grid xs={12} sm={6} md={3} key={name} justify="center" css={{ py: "$8" }}>
+              <Flex align={"center"} justify={"center"}>
+                <Text
+                  weight={"semibold"}
+                  span
+                  size={"$lg"}
+                  css={{
+                    textAlign: "center",
+                    wordBreak: "break-word",
+                    maxWidth: "180px",
+                  }}
+                >
+                  {name}
+                </Text>
+              </Flex>
+            </Grid>
+          ))}
         </Grid.Container>
       </Flex>
 
       <Divider
-        css={{ position: "absolute", inset: "0p", left: "0", mt: "$5" }}
+        css={{ position: "relative", width: "100%", mt: "$5" }}
       />
     </>
   );
