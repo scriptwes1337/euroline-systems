@@ -20,7 +20,7 @@ export const Statistics = () => {
                      textAlign: 'center',
                   }}
                >
-                  Over 8000+ projects completed
+                  Over 500+ projects completed
                </Text>
                <Text
                   span
@@ -29,9 +29,7 @@ export const Statistics = () => {
                      textAlign: 'center',
                   }}
                >
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Iusto provident omnis deleniti temporibus pariatur corporis
-                  aperiam
+                  Our core team has completed over 500 projects throughout their 30+ years of experience
                </Text>
             </Flex>
             <Flex
@@ -48,34 +46,26 @@ export const Statistics = () => {
             >
                <Flex direction={'column'}>
                   <Text h2 css={{color: '$blue600'}}>
-                     $500K+
+                     500+
                   </Text>
                   <Text span css={{textAlign: 'center'}} weight={'medium'}>
-                     Revenue
+                     Customers
                   </Text>
                </Flex>
                <Flex direction={'column'}>
                   <Text h2 css={{color: '$blue600'}}>
-                     10+
+                     1000+
                   </Text>
                   <Text span css={{textAlign: 'center'}} weight={'medium'}>
-                     Products
+                     Projects
                   </Text>
                </Flex>
                <Flex direction={'column'}>
                   <Text h2 css={{color: '$blue600'}}>
-                     $150+
+                     30+ Years
                   </Text>
                   <Text span css={{textAlign: 'center'}} weight={'medium'}>
-                     Components
-                  </Text>
-               </Flex>
-               <Flex direction={'column'}>
-                  <Text h2 css={{color: '$blue600'}}>
-                     10+
-                  </Text>
-                  <Text span css={{textAlign: 'center'}} weight={'medium'}>
-                     Employees
+                     Experience
                   </Text>
                </Flex>
             </Flex>

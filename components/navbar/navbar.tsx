@@ -11,11 +11,11 @@ export const Nav = () => {
    const {setTheme} = useNextTheme();
    const {isDark, type} = useTheme();
    const collapseItems = [
-      'Features',
-      'Customers',
-      'Pricing',
-      'Company',
-      'Legal',
+      'Products',
+      'Projects',
+      'About',
+      'Contact',
+      'Careers',
    ];
    return (
       <Navbar
@@ -32,7 +32,7 @@ export const Nav = () => {
             <Navbar.Toggle aria-label="toggle navigation" showIn="xs" />
             <AcmeLogo />
             <Text b color="inherit" hideIn="xs">
-               ACME
+               Euroline Systems
             </Text>
             <Navbar.Content
                hideIn="sm"
@@ -53,7 +53,7 @@ export const Nav = () => {
                         iconRight={icons.chevron}
                         ripple={false}
                      >
-                        Features
+                        Products
                      </Dropdown.Button>
                   </Navbar.Item>
                   <Dropdown.Menu
@@ -117,10 +117,10 @@ export const Nav = () => {
                   </Dropdown.Menu>
                </Dropdown>
                <Navbar.Link isActive href="#">
-                  Customers
+                  Projects
                </Navbar.Link>
-               <Navbar.Link href="#">Pricing</Navbar.Link>
-               <Navbar.Link href="#">Company</Navbar.Link>
+               <Navbar.Link href="#">About</Navbar.Link>
+               <Navbar.Link href="#">Careers</Navbar.Link>
             </Navbar.Content>
          </Navbar.Brand>
 

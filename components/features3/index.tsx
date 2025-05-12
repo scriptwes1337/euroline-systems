@@ -1,128 +1,103 @@
-import {Card, Divider, Text} from '@nextui-org/react';
-import React from 'react';
-import {BoxIcon} from '../icons/BoxIcon';
-import {Box} from '../styles/box';
-import {Flex} from '../styles/flex';
+import { Divider, Grid, Text } from "@nextui-org/react";
+import React from "react";
+import { FeatureIcon } from "../icons/FeatureIcon";
+import { Flex } from "../styles/flex";
+import { CheckIcon } from "../icons/CheckIcon";
+import { Box } from "../styles/box";
 
 export const Features3 = () => {
-   return (
-      <>
-         <Box
+  return (
+    <>
+      <Flex
+        direction={"column"}
+        css={{
+          gap: "1rem",
+          pt: "$20",
+          justifyContent: "center",
+          alignItems: "center",
+          px: "$6",
+          "@sm": {
+            justifyContent: "space-around",
+            px: "$32",
+            flexDirection: "row",
+          },
+          "@md": {
+            px: "$64",
+          },
+        }}
+      >
+        <Flex direction="column">
+          <Text span css={{ color: "$blue600" }}>
+            Trusted Partner
+          </Text>
+          <Text h3>Proven Luxury Collaborations</Text>
+          <Text
+            span
             css={{
-               px: '$6',
-               pb: '$14',
+              maxWidth: "400px",
+              color: "$accents8",
             }}
-         >
-            <Flex
-               direction={'column'}
-               justify={'center'}
-               align={'center'}
-               css={{
-                  pt: '$20',
-               }}
-            >
-               <Text span css={{color: '$blue600'}}>
-                  Awesome Feature
-               </Text>
-               <Text h3>Your title here</Text>
-               <Text
-                  span
-                  css={{
-                     maxWidth: '800px',
-                     color: '$accents8',
-                     textAlign: 'center',
-                  }}
-               >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  condimentum, nisl ut aliquam lacinia, nisl nisl aliquet nisl,
-                  nec
-               </Text>
-            </Flex>
-            <Flex
-               align={'center'}
-               justify={'center'}
-               wrap={'wrap'}
-               css={{
-                  gap: '1rem',
-                  pt: '$14',
-               }}
-            >
-               <Card css={{mw: '500px'}}>
-                  <Card.Body>
-                     <Flex css={{gap: '0.5rem'}}>
-                        <BoxIcon />
-                        <Flex direction={'column'}>
-                           <Text h5>Your Title</Text>
-                           <Text span>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Sed condimentum, nisl ut aliquam lacinia,
-                              nisl nisl aliquet nisl, nec
-                           </Text>
-                        </Flex>
-                     </Flex>
-                  </Card.Body>
-               </Card>
-               <Card css={{mw: '500px'}}>
-                  <Card.Body>
-                     <Flex css={{gap: '0.5rem'}}>
-                        <BoxIcon />
-                        <Flex direction={'column'}>
-                           <Text h5>Your Title</Text>
-                           <Text span>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Sed condimentum, nisl ut aliquam lacinia,
-                              nisl nisl aliquet nisl, nec
-                           </Text>
-                        </Flex>
-                     </Flex>
-                  </Card.Body>
-               </Card>
-            </Flex>
-            <Flex
-               align={'center'}
-               wrap={'wrap'}
-               justify={'center'}
-               css={{
-                  gap: '1rem',
-                  pt: '$8',
-               }}
-            >
-               <Card css={{mw: '500px'}}>
-                  <Card.Body>
-                     <Flex css={{gap: '0.5rem'}}>
-                        <BoxIcon />
-                        <Flex direction={'column'}>
-                           <Text h5>Your Title</Text>
-                           <Text span>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Sed condimentum, nisl ut aliquam lacinia,
-                              nisl nisl aliquet nisl, nec
-                           </Text>
-                        </Flex>
-                     </Flex>
-                  </Card.Body>
-               </Card>
-               <Card css={{mw: '500px'}}>
-                  <Card.Body>
-                     <Flex css={{gap: '0.5rem'}}>
-                        <BoxIcon />
-                        <Flex direction={'column'}>
-                           <Text h5>Your Title</Text>
-                           <Text span>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Sed condimentum, nisl ut aliquam lacinia,
-                              nisl nisl aliquet nisl, nec
-                           </Text>
-                        </Flex>
-                     </Flex>
-                  </Card.Body>
-               </Card>
-            </Flex>
-         </Box>
+          >
+            Preferred by iconic brands for reliability and precision.
+          </Text>
 
-         <Divider
-            css={{position: 'absolute', inset: '0p', left: '0', mt: '$5'}}
-         />
-      </>
-   );
+          <Flex
+            css={{
+              py: "$2",
+              gap: "$5",
+            }}
+          >
+            <CheckIcon />
+            <Flex direction={"column"}>
+              <Text h4 weight={"medium"}>
+                Mandarin Oriental façade retrofit
+              </Text>
+            </Flex>
+          </Flex>
+          <Flex
+            css={{
+              py: "$2",
+              gap: "$5",
+            }}
+          >
+            <CheckIcon />
+            <Flex direction={"column"}>
+              <Text h4 weight={"medium"}>
+                Marina Bay Sands restaurant systems
+              </Text>
+            </Flex>
+          </Flex>
+          <Flex
+            css={{
+              py: "$2",
+              gap: "$5",
+            }}
+          >
+            <CheckIcon />
+            <Flex direction={"column"}>
+              <Text h4 weight={"medium"}>
+                45-day average project turnaround
+              </Text>
+            </Flex>
+          </Flex>
+        </Flex>
+        <Flex align={"center"}>
+          <Box
+            css={{
+              "& img": {
+                width: "500px",
+                objectFit: "contain",
+                margin: "",
+              },
+            }}
+          >
+            <img src="mandarin-oriental.png" alt="mandarin oriental" />
+          </Box>
+        </Flex>
+      </Flex>
+      <Divider
+        css={{ position: "absolute", inset: "0p", left: "0", mt: "$5" }}
+      />
+    </>
+  );
 };
