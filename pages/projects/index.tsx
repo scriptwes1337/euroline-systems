@@ -5,32 +5,32 @@ import Link from "next/link";
 
 export const projects = [
   {
-    id: "3-&-5_changi-south-singapore",
+    id: "3-5-changi-south-singapore",
     title: "3 & 5 Changi South Singapore",
     description:
       "Supply and installation of aluminium cladding, doors, windows, and louvres",
     architect: "AC Consortium Architects",
     images: {
-      main: "/Projects/3 & 5 Changi South Singapore/3.png",
+      main: "/Projects/35 Changi South Singapore/3.png",
       gallery: [
-        "/Projects/3 & 5 Changi South Singapore/1.png",
-        "/Projects/3 & 5 Changi South Singapore/2.png",
-        "/Projects/3 & 5 Changi South Singapore/3.png",
+        "/Projects/35 Changi South Singapore/1.png",
+        "/Projects/35 Changi South Singapore/2.png",
+        "/Projects/35 Changi South Singapore/3.png",
       ],
     },
     timeToComplete: "8 months",
   },
   {
-    id: "h-&-m-orchard",
+    id: "h-m-orchard",
     title: "H & M Orchard",
     description:
       "Supply and installation of aluminium cladding and stainless steel canopy",
     architect: "K2LD Architects",
     images: {
-      main: "/Projects/H & M Orchard/1.png",
+      main: "/Projects/HM Orchard/1.png",
       gallery: [
-        "/Projects/H & M Orchard/1.png",
-        "/Projects/H & M Orchard/2.png",
+        "/Projects/HM Orchard/1.png",
+        "/Projects/HM Orchard/2.png",
       ],
     },
     timeToComplete: "2.5 months",

@@ -14,17 +14,6 @@ const lightTheme = createTheme({
   },
 });
 
-const darkTheme = createTheme({
-  type: "dark",
-  theme: {
-    colors: {
-      // Your dark theme colors
-      primary: "#FFC107", // Set primary to your yellow
-      focus: "#FFC107", // This controls focus ring color
-    },
-  },
-});
-
 function MyApp({Component, pageProps}: AppProps) {
    return (
       <NextThemesProvider
@@ -32,7 +21,6 @@ function MyApp({Component, pageProps}: AppProps) {
          attribute="class"
          value={{
             light: lightTheme.className,
-            dark: darkTheme.className,
          }}
       >
          <NextUIProvider>
