@@ -1,6 +1,5 @@
 import {Divider, Text} from '@nextui-org/react';
 import React from 'react';
-import {AcmeLogo} from '../navbar/logo';
 import {Box} from '../styles/box';
 import {Flex} from '../styles/flex';
 
@@ -30,7 +29,7 @@ export const Footer = () => {
                   direction={'column'}
                   align={'center'}
                >
-                  <AcmeLogo />
+
                   <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}>
                      <Box as={'li'}>
                         <Text span css={{color: '$accents8'}}>
@@ -205,10 +204,7 @@ export const Footer = () => {
                      }}
                      wrap={'wrap'}
                   >
-                     <AcmeLogo />
-                     <AcmeLogo />
-                     <AcmeLogo />
-                     <AcmeLogo />
+
                   </Flex>
                   <Flex
                      css={{
